@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<web-app>
+    <servlet>
+        <servlet-name>login</servlet-name>
+        <servlet-class>com.jiwang.servlet.LoginServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <name>login</name>
+        <url-pattern>/login</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <name>login</name>
+        <url-pattern>/log</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>reg</servlet-name>
+        <servlet-class>com.jiwang.servlet.RegisterServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <name>reg</name>
+        <url-pattern>/reg</url-pattern>
+    </servlet-mapping>
+</web-app>
