@@ -2,7 +2,6 @@ package server4;
 
 import java.io.IOException;
 import java.net.ServerSocket;
-
 /**
  * 创建服务器并启动
  * 1.请求
@@ -12,17 +11,13 @@ public class Server {
     private ServerSocket server;
     public static final String CRLF="\r\n";
     public static final String BLANK=" ";
-
     private boolean isShutDown= false;
     /**
      * @param args
      */
     public static void main(String[] args) {
-
         Server server = new Server();
         server.start();
-
-
     }
     /**
      * 启动方法
@@ -66,7 +61,5 @@ public class Server {
         isShutDown=true;
         CloseUtil.closeSocket(server);
     }
-
-
 }
 
